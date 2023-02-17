@@ -1,0 +1,296 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: white;
+    transition: .2s linear;
+}
+
+body{
+    background:  #132743;
+    color: rgb(230, 230, 230);
+}
+
+.banner{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-image: url('banner.jpeg');
+}
+
+hr {
+    border: 2px solid #407088
+}
+
+nav .logo{
+    padding-left: 10px;
+    color: red;
+
+}
+
+nav{
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #407088;
+    padding: 2rem 9%;
+    font-size: 10px;
+    cursor: pointer;
+    color:#666;
+    border:.1rem solid #666;
+    border-radius: .3rem;
+    padding:.5rem 1.5rem;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    margin-left: 2rem;
+    transition: 0.3s ease-out;
+}
+
+.menu li a:hover{
+    color:crimson;
+}
+
+.menu li a:visited{
+    color: #132743;
+}
+
+.menu li a:visited:hover{
+    color: crimson;
+}
+
+section.main_content{ 
+    box-sizing: border-box;
+    padding: 10px;
+    float:left;
+    width: 67%;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+aside{
+    box-sizing: border-box;
+    border: 2px pink; 
+    margin: 10px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+table, td, th {
+    border: 1px solid;
+    padding: 3px;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.topic#main-heading{
+    text-align: center;
+    padding: 10px;
+}
+
+#task{
+    text-align: center;
+    padding: 10px;
+}
+
+#task img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#task p {
+    text-align: justify;
+}
+
+#task img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#requirements #submission {
+    padding: 10px;
+}
+
+#requirements  h2{
+    text-align: center;
+    margin: 10px;
+}
+
+#submission h2{
+    text-align: center;
+    margin: 10px;
+}
+
+#submission h3{
+    text-align: center;
+    margin: 10px;
+}
+
+#submission img{
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px; 
+}
+
+#submission ul{
+    text-align: center;
+    margin-right: 20px;
+}
+
+#submission li{
+    list-style-type: none;
+    display: inline;
+
+}
+
+#grading h2{
+    text-align: center;
+    margin: 10px;
+}
+
+footer{
+    background-color: #407088;
+    justify-content: space-around;
+    box-sizing: none;
+    display: flex;
+    float: left;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .contacts{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+footer .categories{
+    margin: 10px;
+    padding: 10px;
+}
+
+footer .quick_links
+{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+footer li{
+    list-style-type: none;
+ 
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer li a{
+    font-size: 20px;
+    align-items: center;
+}
+
+footer li a:hover{
+    color: red; 
+}
+
+footer h5{
+    font-size: 20px;
+    color:rgb(116, 15, 15);
+}
+
+@media only screen and (max-width: 768px)  {
+    /* Mobile and Tablet */
+    html{
+        font-size: 16px;
+    }
+
+    .banner{
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    nav li {
+        text-align: center;
+        margin: 2px;
+    }
+
+    section.main_content{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer > *{
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Desktop */
+    html{
+        font-size: 20px;
+    }
+
+    nav li{
+        display: inline;
+    }
+
+    .img-logo{
+        width: 180px;
+        height: 80px;
+    }
+
+    .img-myphoto {
+        width: 300px;
+        height: 420px;
+    }
+
+    .img-programming {
+        width: 300px;
+        height: 300px;
+    }
+}
