@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amina Makhashbay's Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close </a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+
+    <div class="w3-center w3-padding-16">Amina Makhashbay's Personal Website</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="portfolio">
+    <div class="w3-quarter">
+      <img src="./images/13.jpg" alt="A" style="width:100%">
+      <h3>Bachelor in Biological Sciences at Nazarbayev University </h3>
+      <p></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/1.jpg" alt="S" style="width:100%">
+      <h3>Biological courses I have covered</h3>
+      <p>Molecular Biology, Microbiology, Genetics, Anatomy and Physiology, Biochemistry, Immunology, Parasitology, Cancer Biology, Bioethics, Neuroscience, Neuroimmunology.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/2.jpg" alt="Q" style="width:100%">
+      <h3>Work experience</h3>
+      <p>Two years experience working as an Event Manager in NIS Alumni association.</p>
+      <p>More than 2 year I am working as an English teacher at the online school Skyeng. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/3.jpg" alt="R" style="width:100%">
+      <h3>Personal and professional skills</h3>
+      <p>Communicative, Sociable, Problem-solving, Creative, Critical thinking, Leadership and Project management.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="./images/10.jpg" alt="A" style="width:100%">
+      <h3>Non-biological courses I have covered</h3>
+      <p>Sociology, Communication and Society, Intercultural Communications and Applied Statistical Methods.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/7.jpg" alt="B" style="width:100%">
+      <h3>Extracurricular activities</h3>
+      <p>Playing ukulele, singing and recording music covers. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/8.jpg" alt="C" style="width:100%">
+      <h3>Future Master's</h3>
+      <p>Master's in Psychological sciences and clinical psychology.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/9.jpg" alt="D" style="width:100%">
+      <h3>My vision</h3>
+      <p>Everything is for the best.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me, The Biologist, The Traveler</h3><br>
+    <img src="./images/5.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>I am an artistic person with Bachelor degree in Biology!</b></h4>
+      <h6><i>Work hard, play hard</i></h6>
+      <p>As a biologist with a passion for the arts, I bring a unique perspective to the world around me. Whether I am capturing the beauty of nature through photography or expressing yourself through music and theatre, my creativity knows no bounds. Through my lens, I am able to capture moments that others may miss, and through my performances, I am able to connect with audiences in a way that is truly special. My ability to merge my scientific knowledge with my artistic talents is a testament to my versatility and my dedication to living a well-rounded life.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Nazarbayev University</h3>
+      <p>It is a modern, English-speaking research university located in Astana, the Republic of Kazakhstan’s capital and the heart of Eurasia.</p>
+      
+    </div>
+  
+    <div class="w3-third">
+      <h3>Posts</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="./images/camera.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Photo shooting</span><br>
+          <span>Portraits for portfolio</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="./images/acting.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Acting</span><br>
+          <span>Theatrical acting</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>MY POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Photoshooting</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Acting</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Theatre</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ukulele</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Music</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Instagram</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Biology</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Singing</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Karaoke</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drawing</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Web programming</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dancing</span>
+      </p>
+    </div>
+  </footer>
+
+
+</div>
+
+<script>
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amina Makhashbay's Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<script src="java.js"></script>
+<style>
+  <script src="java.js"></script>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.slider-image {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.slider-pagination button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  background-color: gray;
+  cursor: pointer;
+}
+.slider-pagination button.active {
+  background-color: black;
+}
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  display: inline-block;
+  margin: 0 2px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+</style>
+</head>
+<body>
+
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close </a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+
+    <div class="w3-center w3-padding-16">Amina Makhashbay's Personal Website</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+ <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="./images/4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="./images/10.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="./images/12.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+  <!-- Pagination -->
+
+
+
+  <!-- About Section -->
+
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>My hobbies</h3>
+      <p>
+        My hobbies reflect a diverse range of interests and talents. I love photo shooting, as it allows me to capture the beauty of the world around me. My passion for singing and performing in theatre allows me to express myself through music and drama. Dancing and playing the ukulele showcase my rhythm and musical abilities, while my skill for drawing allows me to bring my imagination to life on paper. Pursuing multiple hobbies not only keeps me entertained and engaged but also highlights my creativity and dedication to exploring my passions.</p>
+      
+    </div>
+  
+
+    <div class="w3-third w3-serif">
+      <h3>MY POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Photoshooting</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Acting</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Theatre</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ukulele</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Music</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Instagram</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Biology</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Singing</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Karaoke</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drawing</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Web programming</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dancing</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

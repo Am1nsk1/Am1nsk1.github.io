@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amina Makhashbay's Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<script src="java.js"></script>
+<style>
+  <script src="java.js"></script>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.slider-image {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.slider-pagination button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  background-color: gray;
+  cursor: pointer;
+}
+.slider-pagination button.active {
+  background-color: black;
+}
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  display: inline-block;
+  margin: 0 2px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-me-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-me-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.contact-me-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition
+
+
+</style>
+</head>
+<body>
+
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close </a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+
+    <div class="w3-center w3-padding-16">Amina Makhashbay's Personal Website</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <div class="contact-me-container">
+    <h1>Contact Me</h1>
+    <p>Feel free to contact me through any of the social media links below:</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/amina.makhashbay.3?mibextid=LQQJ4d" target="_blank" class="facebook"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://youtube.com/@aminamakhashbay6284" target="_blank" class="youtube"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://instagram.com/_aminski_?igshid=YmMyMTA2M2Y=" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+
+
+
+  <!-- About Section -->
+
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Nazarbayev University</h3>
+      <p>It is a modern, English-speaking research university located in Astana, the Republic of Kazakhstan’s capital and the heart of Eurasia.</p>
+      
+    </div>
+  
+
+    <div class="w3-third w3-serif">
+      <h3>MY POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Photoshooting</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Acting</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Theatre</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ukulele</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Music</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Instagram</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Biology</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Singing</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Karaoke</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drawing</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Web programming</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dancing</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
